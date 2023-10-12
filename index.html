@@ -2,91 +2,241 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nikhil - Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Nikhil's Portfolio</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Box Icons -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(18, 18, 62);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        color: rgb(153, 153, 226);
-        font-size: 1.02rem;
-      }
-      .left {
-        font-size: 1.5rem;
-      }
-      .firstsection {
-        display: flex;
-        justify-content: space-around;
-        margin: 23px 0;
-      }
-      .firstsection > div {
-        width: 30%;
-      }
-      .leftsection {
-        font-size: 3rem;
-        margin: 80px 0;
-      }
-      .rightsection img {
-        width: 80%;
-      }
-    </style>
   </head>
   <body>
+    <!-- Navbar -->
     <header>
-      <nav>
-        <div class="left">Nikhil's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
+      <a href="#home" class="logo">Nikhil Dubey</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
-    <main>
-      <section class="firstsection">
-        <div class="leftsection">
-          Jai Shree Ram, My name is Nikhil
-          <div>and I am a passionate Web Developer</div>
+    <!-- Home -->
+
+    <section class="home" id="home">
+      <div class="social">
+        <a href="https://github.com/nikhildubeyofficial" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nikhil-dubey-b3210a240/"
+          target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/p/CyTRpw5S2pW/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+      </div>
+      <div class="home-img">
+        <img src="image/pp2-removebg.png" alt="" />
+      </div>
+      <div class="home-text">
+        <span>जय श्री राम🚩, I'm</span>
+        <h1>Nikhil Dubey</h1>
+        <span id="skillset"></span>
+        <p>
+          I am a passionate B.Tech Computer Science Engineering student, skilled
+          in a diverse array of programming languages including Python, Java,
+          HTML, CSS, SQL, and MongoDB.
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+      </div>
+      <!-- About Content -->
+      <div class="about-container">
+        <div class="about-img">
+          <img src="image/webdev.jpeg" alt="" />
         </div>
-        <div class="rightsection">
-          <img src="developer.png" alt="Image Loading..." />
+        <div class="about-text">
+          <p>
+            I am a passionate B.Tech Computer Science Engineering student,
+            skilled in a diverse array of programming languages including
+            Python, Java, HTML, CSS, SQL, and MongoDB. Eager to explore the
+            limitless possibilities of technology and contribute innovative
+            solutions to real-world challenges.
+          </p>
+          <div class="information">
+            <!-- Box 1 -->
+            <div class="info-box">
+              <i class="bx bxs-user"></i>
+              <span>Nikhil Dubey</span>
+            </div>
+            <!-- Box 2 -->
+            <div class="info-box">
+              <i class="bx bxs-phone"></i>
+              <span>+91 9098309221</span>
+            </div>
+            <!-- Box 3 -->
+            <div class="info-box">
+              <i class="bx bxs-envelope"></i>
+              <span>officialnikhildubey@gmail.com</span>
+            </div>
+          </div>
+          <a href="#" class="btn">Download CV</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+      </div>
+      <!-- Skills Content -->
+      <div class="skills-container">
+        <div class="bars">
+          <!-- Box 1 -->
+          <div class="bars-box">
+            <h3>HTML</h3>
+            <span>94%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar html-bar"></div>
+          </div>
+          <!-- Box 2 -->
+          <div class="bars-box">
+            <h3>CSS</h3>
+            <span>84%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar css-bar"></div>
+          </div>
+          <!-- Box 3 -->
+          <div class="bars-box">
+            <h3>JavaScript</h3>
+            <span>74%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar js-bar"></div>
+          </div>
+          <!-- Box 4 -->
+          <div class="bars-box">
+            <h3>Python</h3>
+            <span>80%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar react-bar"></div>
+          </div>
+        </div>
+        <div class="skills-img">
+          <img src="image/123.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="heading">
+        <h2>Services</h2>
+        <span>Our Services</span>
+      </div>
+      <div class="services-content">
+        <!-- Box 1 -->
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Box 2 -->
+        <div class="services-box">
+          <i class="bx bx-server"></i>
+          <h3>Backend Development</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Box 3 -->
+        <div class="services-box">
+          <i class="bx bx-brush"></i>
+          <h3>UI/UX Design</h3>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxl-python"></i>
+          <h3>Python Developer</h3>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Us</span>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" name="" id="" placeholder="Your Email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write Message Here..."
+          ></textarea>
+          <input type="button" value="Send" class="contact-button" />
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <h2>|| जय श्री राम ||</h2>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/profile.php?id=100074787368971s"
+          target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nikhil-dubey-b3210a240/"
+          target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/p/CyTRpw5S2pW/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCw4otdnU7UwxVy2Sko2SmTA"
+          target="_blank"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Link To JS -->
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#skillset", {
+        strings: [
+          "Web Developer",
+          "Python Developer",
+          "Web Designer",
+          "Backend Developer",
+          "Database Designer",
+        ],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
