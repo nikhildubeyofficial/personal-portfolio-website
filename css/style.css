@@ -103,7 +103,7 @@ header.shadow {
   width: 100%;
   border: 0.2rem solid black;
   border-radius: 50%;
-  background-color: rgb(245, 227, 71);
+  background-color: rgb(255, 230, 0);
 }
 .home-text span {
   font-size: var(--medium-font);
@@ -115,7 +115,7 @@ header.shadow {
 #skillset {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #091936;
+  color: rgb(255, 230, 0);
 }
 .home-text p {
   font-size: var(--p-font);
@@ -388,6 +388,11 @@ form textarea {
     padding: 1.5rem;
     display: block;
     background: var(--bg-color);
+  }
+  #darkmode {
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
   }
   .scroll-down {
     display: none;
