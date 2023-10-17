@@ -11,7 +11,7 @@ You can view my portfolio website live at (https://nikhildubeyofficial.github.io
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap (optional, if used)
+- Bootstrap 
 
 ## Features
 
