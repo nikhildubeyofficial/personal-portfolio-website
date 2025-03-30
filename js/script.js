@@ -98,3 +98,23 @@ function showStatus(message, type) {
     status.className = 'form-status';
   }, 5000);
 }
+
+// Section visibility animation
+const sections = document.querySelectorAll('section');
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
+
+sections.forEach(section => {
+  observer.observe(section);
+});
