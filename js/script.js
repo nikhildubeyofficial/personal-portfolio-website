@@ -68,7 +68,7 @@ function handleSubmit(event) {
   const templateParams = {
     from_name: name,
     from_email: email,
-    message: message,
+    message: message
   };
   
   // Send email using EmailJS
@@ -77,6 +77,7 @@ function handleSubmit(event) {
       showStatus('Message sent successfully!', 'success');
       form.reset();
     }, function(error) {
+      console.error('EmailJS Error:', error);
       showStatus('Failed to send message. Please try again.', 'error');
     })
     .finally(function() {
